@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +26,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="form-container">
@@ -53,18 +55,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
   <script>
-    function login() {
-            // Lấy giá trị từ các trường input
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-
-            // Kiểm tra điều kiện đăng nhập (đây chỉ là ví dụ đơn giản)
-            if (email === "admin" && password === "123") {
-                window.location.href = "index-logined.php";
-            } else {
-                alert("Tài khoản hoặc mật khẩu không đúng!");
-            }
-        }
   </script>
 </body>
+
 </html>
