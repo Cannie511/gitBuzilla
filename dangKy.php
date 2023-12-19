@@ -15,7 +15,7 @@ if(isset($_POST['btnDangKy']))
         {
             $tmp = 0;
             $sql = "INSERT INTO nguoi_dung (nguoi_dung.ten_dang_nhap,nguoi_dung.mat_khau,nguoi_dung.ngay_sinh,nguoi_dung.gioi_tinh,nguoi_dung.anh_dai_dien)
-             VALUES('$name','$matKhau','$ngaySinh','$tmp','avtNam.jpg')";
+             VALUES('$name','$matKhau','$ngaySinh','$tmp','img/avtNam.jpg')";
                $stm = $conn->prepare($sql);
                $stm->execute();
                 echo "THÊM THÀNH CÔNG";
@@ -24,7 +24,7 @@ if(isset($_POST['btnDangKy']))
         {
             $tmp = 1;
             $sql = "INSERT INTO nguoi_dung (nguoi_dung.ten_dang_nhap,nguoi_dung.mat_khau,nguoi_dung.ngay_sinh,nguoi_dung.gioi_tinh,nguoi_dung.anh_dai_dien)
-            VALUES('$name','$matKhau','$ngaySinh','$tmp','avtNu.jpg.jpg')";
+            VALUES('$name','$matKhau','$ngaySinh','$tmp','img/avtNu.jpg')";
               $stm = $conn->prepare($sql);
               $stm->execute();
                echo "THÊM THÀNH CÔNG";
