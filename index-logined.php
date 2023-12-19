@@ -176,8 +176,13 @@ session_start();
 
                     <!-- Write Comment Section -->
                     <div class="form-group d-flex">
+                       
+
+                        <form action="BinhLuan.php" method="post">
+                        <input type="hidden" id="ma_input" name="ma" value="">
                         <input type="text" class="form-control mb-2" placeholder="Viết bình luận" name="comment">
                         <button class="btn btn-primary ml-2"><ion-icon name="send"></ion-icon></button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -234,6 +239,25 @@ session_start();
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var postContainers = document.querySelectorAll('.post-container');
+        var maInput = document.getElementById('ma_input');
+
+        postContainers.forEach(function (container) {
+            container.addEventListener('click', function () {
+                var maValue = container.querySelector('img').dataset.ma;
+                console.log('Clicked post ma:', maValue);
+
+                
+                maInput.value = maValue;
+
+               
+            });
+        });
+    });
+</script>
 </body>
 
 </html>
