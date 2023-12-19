@@ -14,7 +14,6 @@
       height: 100vh;
       background-color: #f8f9fa;
     }
-
     .form-container {
       max-width: 400px;
       width: 100%;
