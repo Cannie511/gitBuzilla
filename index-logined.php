@@ -28,7 +28,6 @@ session_start();
         .navbar-brand img {
             border-radius: 50%;
             width: 40px;
-            /* Adjust the width and height as needed */
             height: 40px;
             object-fit: cover;
         }
@@ -37,12 +36,10 @@ session_start();
             display: flex;
             align-items: center;
             margin-bottom: 10px;
-            /* Thêm margin để tạo khoảng cách giữa các thẻ */
         }
 
         .user-card img {
             width: 40px;
-            /* Thiết lập kích thước cho hình ảnh */
             height: 40px;
             border-radius: 50%;
             /* Làm tròn hình ảnh */
@@ -50,12 +47,10 @@ session_start();
 
         .user-card h5 {
             margin-left: 10px;
-            /* Thêm khoảng cách giữa hình ảnh và văn bản */
         }
 
         .post-container {
             cursor: pointer;
-            /* Add pointer cursor to indicate clickable */
             max-width: 900px;
             width: 100%;
             margin: 20px auto;
@@ -67,7 +62,7 @@ session_start();
         }
 
         .post-container img {
-            min-width: 100%;
+            width: 100%;
             height: auto;
             border-radius: 8px;
             margin-bottom: 15px;
@@ -83,20 +78,16 @@ session_start();
             color: #fff;
         }
 
-        /* Style for modal content */
         .modal-content img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
         }
 
-        /* Adjust the width of the search input */
         .navbar-form .form-control {
             width: 1000px;
-            /* You can adjust this value based on your design */
         }
 
-        
     </style>
 </head>
 
@@ -148,23 +139,7 @@ session_start();
 
     <!-- Main Content -->
     <div class="container mt-4">
-        <!-- Post 1 -->
-        <div class="post-container" data-bs-toggle="modal" data-bs-target="#postModal1">
-            <img src="https://placekitten.com/600/300" alt="Ảnh bài viết 1">
-            <h5 class="mb-3">Nguyễn Thanh Nam</h5>
-            <p>Cuối tuần này nộp đồ án nha mấy ní</p>
-            <!-- Add other post content, comments, likes, etc. here -->
-        </div>
-
-        <!-- Post 2 -->
-        <div class="post-container" data-bs-toggle="modal" data-bs-target="#postModal2">
-            <img src="https://placekitten.com/600/301" alt="Ảnh bài viết 2">
-            <h5 class="mb-3">Nguyễn Văn Hoàng</h5>
-            <p>Buồn quá hôm nay mới rớt Mobile</p>
-            <!-- Add other post content, comments, likes, etc. here -->
-        </div>
-
-        <!-- Add more posts as needed -->
+        <?php include "loadBlogs.php";?>
     </div>
 
     <!-- Modal 1 -->
