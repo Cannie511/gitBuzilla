@@ -49,7 +49,7 @@
             <div class="custom-container">
                 <div class="container mt-5">
                     <h2 class="mb-4">Đăng Ký</h2>
-                    <form>
+                    <form method="post" action="dangKy.php">
                         <div class="form-group">
                             <label for="username">Tên Tài Khoản:</label>
                             <input type="text" class="form-control" id="username" name="username" required>
@@ -80,7 +80,7 @@
                                 <label class="form-check-label" for="female">Nữ</label>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Đăng Ký</button>
+                        <button type="submit" class="btn btn-primary" name = "btnDangKy">Đăng Ký</button>
                     </form>
                 </div>
                 </form>
