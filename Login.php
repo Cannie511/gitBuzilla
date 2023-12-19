@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,12 +53,11 @@
       <button class="btn btn-primary position-relative" name="btnDangNhap">Đăng Nhập</button>
     </form>
   </div>
-
+  
   <!-- Bootstrap JS và Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-  <script>
-  </script>
+  
 </body>
 
 </html>

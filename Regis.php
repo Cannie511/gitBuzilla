@@ -1,3 +1,6 @@
+<?php
+include "dangKy.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link đến Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Trang Web Của Bạn</title>
     <style>
         html,
@@ -24,7 +27,7 @@
             justify-content: center;
             /* Đặt độ mờ và màu của đổ bóng */
         }
-        
+
         .custom-container {
             background-color: #fff;
             /* Màu nền của container */
@@ -32,6 +35,7 @@
             border-radius: 8px;
             /* Làm tròn góc của container */
         }
+
         .form-container {
             min-width: 400px;
             width: 100%;
@@ -49,7 +53,7 @@
             <div class="custom-container">
                 <div class="container mt-5">
                     <h2 class="mb-4">Đăng Ký</h2>
-                    <form method="post" action="dangKy.php">
+                    <form method="post" action="Regis.php">
                         <div class="form-group">
                             <label for="username">Tên Tài Khoản:</label>
                             <input type="text" class="form-control" id="username" name="username" required>
@@ -80,7 +84,7 @@
                                 <label class="form-check-label" for="female">Nữ</label>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary" name = "btnDangKy">Đăng Ký</button>
+                        <button type="submit" class="btn btn-primary" name="btnDangKy">Đăng Ký</button>
                     </form>
                 </div>
                 </form>
@@ -88,10 +92,12 @@
         </div>
     </div>
     <!-- Link đến Bootstrap JS và Popper.js (đối với dropdown và các chức năng khác) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
 
+    </script>
 </body>
 
 </html>
