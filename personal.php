@@ -64,6 +64,7 @@
       width: 90%;
       height: auto;
       border-radius: 10px;
+      padding: 5px;
     }
   </style>
 </head>
@@ -130,7 +131,22 @@
     </div>
   </div>
 
-
+  <div class="modal fade" id="taoMoi" tabindex="-1" aria-labelledby="postModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="postModal1Label">Thông tin bài viết 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="mt-3">John Doe</h5>
+          <textarea name="noiDungBaiViet" placeholder="Viết nội dung ở đây..."  id="" cols="30" rows="10"></textarea>
+          <input type="file" name="fileAnh" id="">
+          <button class="btn btn-primary ml-2">Đăng</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
