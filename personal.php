@@ -151,6 +151,10 @@ include "dangBai.php";
           <input type="file" name="fileAnh" id="">
           <button type="submit" name="btndang" class="btn btn-primary ml-2">Đăng</button>
           </form>
+
+        </div>
+        </form>
+
       </div>
     </div>
   </div>

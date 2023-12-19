@@ -8,7 +8,7 @@ $data = $stm->fetchAll(PDO::FETCH_ASSOC);
 foreach ($data as $key => $blogs) {
     echo "
     <div class='post-container post' data-bs-toggle='modal' data-bs-target='#post".$data[$key]['ma']."'>
-    <img src='".$data[$key]['anh']."' alt='Ảnh bài viết'>
+    <img src='".$data[$key]['anh']."' alt='Ảnh bài viết' data-ma='".$data[$key]['ma']."'>
     <h5 class='mb-3'>".$data[$key]['ten_dang_nhap']."</h5>
     <p>".$data[$key]['bai_viet']."</p>
 </div>
