@@ -1,6 +1,6 @@
 <?php 
 session_start();
-
+// echo  $_SESSION['ten_dang_nhap'];
 ?>
 
 
@@ -109,7 +109,7 @@ session_start();
                         <a class="nav-link" href="#">IT BLog</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Đăng xuất</a>
+                        <a class="nav-link" href="Login.php">Đăng xuất</a>
                     </li>
                 </ul>
                 <!-- Search Form -->

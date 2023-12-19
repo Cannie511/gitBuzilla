@@ -1,4 +1,5 @@
 <?php
+include "loadCmt.php";
 include("ketnoi.php");
 
 $sql = "SELECT * FROM `blogs`";
@@ -30,18 +31,9 @@ foreach ($data as $key => $blogs) {
                         </div>
                     </div>
                     <p class='mt-3'>".$data[$key]['bai_viet']."</p>
-                    <div class='comments-section'>
-                        <div class='comment'>
-                            <img src='https://placekitten.com/30/30' alt='Hình ảnh người dùng'>
-                            <strong>Người dùng 1</strong>
-                            <p> Bài viết hay quá!</p>
-                        </div>
-                        <div class='comment'>
-                            <img src='https://placekitten.com/30/30' alt='Hình ảnh người dùng'>
-                            <strong>Người dùng 2</strong>
-                            <p> Cảm ơn bạn đã chia sẻ!</p>
-                        </div>
-                    </div>
+                    <div class='comments-section'>";
+                    loadcmt($data[$key]['ma']);
+                    echo "</div>
 
                     <!-- Write Comment Section -->
                     <div class='form-group d-flex'>
