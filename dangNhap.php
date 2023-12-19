@@ -14,6 +14,7 @@ if(isset($_POST['btnDangNhap']))
         session_start();
         echo "dang nhap thanh cong";
         $_SESSION['ten_dang_nhap '] = $user;
+        header("Location: index-logined.php");
         var_dump ($_SESSION);
     }
     else

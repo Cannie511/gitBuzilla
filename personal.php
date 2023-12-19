@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,42 +60,54 @@
       height: auto;
       border-radius: 8px;
     }
+    textarea{
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Profile Header -->
   <div class="profile-header">
     <h1>John Doe</h1>
     <img src="https://placekitten.com/120/120" alt="Ảnh hồ sơ" class="profile-img">
+    <button class="btn btn-primary ml-2" data-bs-toggle="modal" data-bs-target="#taoMoi">Tạo Bài Viết Mới
+      &nbsp;&nbsp;<ion-icon name="add-circle"></ion-icon></button>
   </div>
 
   <!-- Profile Content -->
   <div class="container mt-4 profile-content">
+
     <h2>Bài Viết Mới Nhất</h2>
 
     <!-- Post 1 -->
     <div class="post-container" data-bs-toggle="modal" data-bs-target="#postModal1">
       <img src="https://placekitten.com/600/300" alt="Ảnh bài viết 1">
       <h5 class="mb-3">John Doe</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus eget velit ullamcorper facilisis. Proin facilisis varius orci, a gravida velit luctus ut.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus eget velit ullamcorper facilisis. Proin
+        facilisis varius orci, a gravida velit luctus ut.</p>
       <!-- Add other post content, comments, likes, etc. here -->
     </div>
 
     <div class="post-container" data-bs-toggle="modal" data-bs-target="#postModal1">
       <img src="https://placekitten.com/600/300" alt="Ảnh bài viết 1">
       <h5 class="mb-3">John Doe</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus eget velit ullamcorper facilisis. Proin facilisis varius orci, a gravida velit luctus ut.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus eget velit ullamcorper facilisis. Proin
+        facilisis varius orci, a gravida velit luctus ut.</p>
       <!-- Add other post content, comments, likes, etc. here -->
     </div>
 
     <div class="post-container" data-bs-toggle="modal" data-bs-target="#postModal1">
       <img src="https://placekitten.com/600/300" alt="Ảnh bài viết 1">
       <h5 class="mb-3">John Doe</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus eget velit ullamcorper facilisis. Proin facilisis varius orci, a gravida velit luctus ut.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus eget velit ullamcorper facilisis. Proin
+        facilisis varius orci, a gravida velit luctus ut.</p>
       <!-- Add other post content, comments, likes, etc. here -->
     </div>
-    
+
     <!-- Add more posts as needed -->
 
   </div>
@@ -110,16 +123,21 @@
         <div class="modal-body">
           <img src="https://placekitten.com/600/300" alt="Ảnh bài viết 1">
           <h5 class="mt-3">John Doe</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus eget velit ullamcorper facilisis. Proin facilisis varius orci, a gravida velit luctus ut.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus eget velit ullamcorper facilisis.
+            Proin facilisis varius orci, a gravida velit luctus ut.</p>
         </div>
       </div>
-  </div>
+    </div>
   </div>
 
 
-  
+
+
+
   <!-- Bootstrap JS và Popper.js -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
