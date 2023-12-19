@@ -29,23 +29,23 @@
 
   <div class="form-container">
     <h2 class="text-center mb-4">Đăng Nhập</h2>
-    <form>
+    <form action="dangNhap.php" method="post">
       <div class="mb-3">
-        <label for="email" class="form-label">Tài khoản</label>
-        <input type="text" class="form-control" id="email" required>
+        <label for="text" class="form-label">Tài khoản</label>
+        <input type="text" class="form-control" id="user" name="user1" required >
       </div>
       <div class="mb-3">
         <label for="password" class="form-label">Mật khẩu:</label>
-        <input type="password" class="form-control" id="password" required>
+        <input type="password" class="form-control" id="password" name="password" required>
       </div>
       <div class="mb-3">
-        <strong>Bạn chưa có tài khoản ? <a href="">Đăng ký</a> tại đây. </strong>
+        <strong>Bạn chưa có tài khoản ? <a href="Regis.php">Đăng ký</a> tại đây. </strong>
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="remember">
         <label class="form-check-label" for="remember">Ghi nhớ đăng nhập</label>
       </div>
-      <button onclick="login()" class="btn btn-primary position-relative">Đăng Nhập</button>
+      <button class="btn btn-primary position-relative" name="btnDangNhap">Đăng Nhập</button>
     </form>
   </div>
 
