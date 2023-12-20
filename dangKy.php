@@ -2,7 +2,7 @@
 include("ketnoi.php");
 
 if (isset($_POST['btnDangKy'])) {
-    $name = $_POST['username'];
+    $name = str_replace(' ', '', $_POST['username']);
     $matKhau = $_POST['password'];
     $NmatKhau = $_POST['confirmPassword'];
     $ngaySinh = $_POST['dob'];
