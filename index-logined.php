@@ -1,6 +1,7 @@
 <?php 
 session_start();
-
+// echo  $_SESSION['ten_dang_nhap'];
+include "BinhLuan.php";
 ?>
 
 
@@ -95,11 +96,15 @@ session_start();
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<<<<<<< HEAD
         <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
                 aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"> </span>
             </button>
+=======
+        <div class="container-flex">
+>>>>>>> aa447556d42d9da064b6d30f4fe8cb9b51961763
             <!-- Use an image for the navbar brand -->
             <a class="navbar-brand" href="personal.php"><img src="https://placekitten.com/40/40" alt="Logo"></a>
             <!-- Add other navigation links or elements here -->
@@ -109,7 +114,7 @@ session_start();
                         <a class="nav-link" href="#">IT BLog</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Đăng xuất</a>
+                        <a class="nav-link" href="Login.php">Đăng xuất</a>
                     </li>
                 </ul>
                 <!-- Search Form -->
@@ -120,22 +125,6 @@ session_start();
             </div>
         </div>
     </nav>
-
-    <!-- Sidebar -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body sidebar">
-            <!-- Add sidebar content, links, etc. here -->
-            <a href="#" class="nav-link">Trang Chủ</a>
-            <a href="#" class="nav-link">Hồ Sơ</a>
-            <a href="#" class="nav-link">Bạn Bè</a>
-            <a href="#" class="nav-link">Thông Báo</a>
-            <a href="#" class="nav-link">Cài Đặt</a>
-        </div>
-    </div>
 
     <!-- Main Content -->
     <div class="container mt-4">
@@ -176,8 +165,13 @@ session_start();
 
                     <!-- Write Comment Section -->
                     <div class="form-group d-flex">
+                       
+
+                        <form action="BinhLuan.php" method="post">
+                        <input type="hidden" id="ma_input" name="ma" value="">
                         <input type="text" class="form-control mb-2" placeholder="Viết bình luận" name="comment">
                         <button class="btn btn-primary ml-2"><ion-icon name="send"></ion-icon></button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -234,7 +228,25 @@ session_start();
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-    
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var postContainers = document.querySelectorAll('.post-container');
+        var maInput = document.getElementById('ma_input');
+
+        postContainers.forEach(function (container) {
+            container.addEventListener('click', function () {
+                var maValue = container.querySelector('img').dataset.ma;
+                console.log('Clicked post ma:', maValue);
+
+                
+                maInput.value = maValue;
+
+               
+            });
+        });
+    });
+</script>
+
 </body>
 
 </html>
