@@ -95,11 +95,25 @@ include "BinhLuan.php";
 <body>
 
     <!-- Navbar -->
-    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
                 aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body sidebar">
+            <!-- Add sidebar content, links, etc. here -->
+            <a href="#" class="nav-link">Trang Chủ</a>
+            <a href="#" class="nav-link">Hồ Sơ</a>
+            <a href="#" class="nav-link">Bạn Bè</a>
+            <a href="#" class="nav-link">Thông Báo</a>
+            <a href="#" class="nav-link">Cài Đặt</a>
+        </div>
+    </div>
 
 
         <div class="container-flex">
