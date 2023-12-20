@@ -96,9 +96,9 @@ session_start();
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
                 aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"> </span>
             </button>
             <!-- Use an image for the navbar brand -->
             <a class="navbar-brand" href="personal.php"><img src="https://placekitten.com/40/40" alt="Logo"></a>
