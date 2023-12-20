@@ -21,6 +21,7 @@ if (isset($_SESSION['ten_dang_nhap'])) {
                         <h5 class='modal-title' id='postModal1Label'>bài viết của ".$data[$key]['ten_dang_nhap']."</h5>
                         <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
                     </div>
+                    
                     <div class='modal-body'>
                         <img src='".$data[$key]['anh']."' alt='Ảnh bài viết 1'>
                         <div class='user-info mt-3'>
@@ -33,7 +34,7 @@ if (isset($_SESSION['ten_dang_nhap'])) {
                         <div class='comments-section'>";
                         loadcmt($data[$key]['ma']);
                         echo "</div>
-    
+
                         <!-- Write Comment Section -->
                         <div class='form-group d-flex'>
                             <input type='text' class='form-control mb-2' placeholder='Viết bình luận' name='comment'>
