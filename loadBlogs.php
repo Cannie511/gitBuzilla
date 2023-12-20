@@ -22,6 +22,7 @@ foreach ($data as $key => $blogs) {
                     <h5 class='modal-title' id='postModal1Label'>bài viết của ".$data[$key]['ten_dang_nhap']."</h5>
                     <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
                 </div>
+                
                 <div class='modal-body'>
                     <img src='".$data[$key]['anh']."' alt='Ảnh bài viết 1'>
                     <div class='user-info mt-3'>
@@ -34,12 +35,13 @@ foreach ($data as $key => $blogs) {
                     <div class='comments-section'>";
                     loadcmt($data[$key]['ma']);
                     echo "</div>
-
+                    <form action='index-logined.php' method='post' enctype='multipart/form-data'>
                     <!-- Write Comment Section -->
                     <div class='form-group d-flex'>
                         <input type='text' class='form-control mb-2' placeholder='Viết bình luận' name='comment'>
-                        <button class='btn btn-primary ml-2'><ion-icon name='send'></ion-icon></button>
+                        <button class='btn type='submit' name='btncmt' btn-primary ml-2'><ion-icon name='send'></ion-icon></button>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
