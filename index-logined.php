@@ -223,10 +223,13 @@ session_start();
 
                     <!-- Write Comment Section -->
                     <div class="write-comment">
+                    <form action="BinhLuan.php" method="post">
                         <div class="form-group d-flex">
                             <input type="text" class="form-control mb-2" placeholder="Viết bình luận" name="comment">
                             <button class="btn btn-primary ml-2"><ion-icon name="send"></ion-icon></button>
                         </div>
+
+                    </form>
                     </div>
                 </div>
             </div>
