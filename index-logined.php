@@ -96,15 +96,10 @@ include "BinhLuan.php";
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-<<<<<<< HEAD
-        <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
-                aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"> </span>
-            </button>
-=======
+
+
         <div class="container-flex">
->>>>>>> aa447556d42d9da064b6d30f4fe8cb9b51961763
+
             <!-- Use an image for the navbar brand -->
             <a class="navbar-brand" href="personal.php"><img src="https://placekitten.com/40/40" alt="Logo"></a>
             <!-- Add other navigation links or elements here -->
